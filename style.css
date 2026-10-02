@@ -1,0 +1,77 @@
+/* Zerando margens e definindo a fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #272b33;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #00ff95;
+}
+
+/* Estilo do botão de carregar */
+button {
+    background-color: #00ff95;
+    color: #272b33;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00b368;
+}
+
+/* Container usando CSS Grid para organizar os cards em grade */
+#container-personagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada card de personagem */
+.card {
+    background-color: #3c3e44;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.card p {
+    color: #9e9e9e;
+    font-size: 14px;
+    margin: 3px 0;
+}
